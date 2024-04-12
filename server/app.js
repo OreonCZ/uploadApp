@@ -5,8 +5,8 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 const cors = require("cors");
-const dotEnv = require("dotenv");
-dotEnv.config();
+const dotenv = require('dotenv');
+dotenv.config();
 
 var uploadsRouter = require('./routes/uploads');
 
