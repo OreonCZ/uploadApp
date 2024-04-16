@@ -78,3 +78,7 @@ html {
 .pt-7 {
   padding-top: 2.25rem;
 }
+
+.image {
+  max-width: 10rem;
+}
