@@ -52,11 +52,13 @@
 //   )
 // }
 import Card from "../../components/Card/Card"
+import StickyButtonMenu from "../../components/StickyButtonMenu/StickyButtonMenu"
 
 function Home() {
   return (
     <>
-    <div className="grid is-col-min-11">
+    <StickyButtonMenu />
+    <div className="grid is-col-min-11" style={{paddingTop: '3.5rem'}}>
       <Card
         icon={'desktop_windows'}
         title={'Desktop'}
