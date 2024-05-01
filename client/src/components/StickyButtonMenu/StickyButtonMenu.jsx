@@ -1,4 +1,5 @@
 import { useNavigate } from "react-router-dom";
+import Button from "../Button/Button";
 
 function StickyButtonMenu() {
 
@@ -17,12 +18,7 @@ let navigate = useNavigate()
         <span className="material-symbols-outlined" onClick={() => navigate(-1)} style={{fontSize: '2rem', position: 'absolute', left: '2rem', cursor: 'pointer', userSelect: 'none'}}>keyboard_return</span>
         <div className="column is-one-fifth">
           <div className="field is-flex is-justify-content-center">
-            <button
-              className="button"
-              style={{ height: "2.5rem", color: "#a31bf1" }}
-            >
-              Upload
-            </button>
+            <Button />
           </div>
         </div>
       </div>

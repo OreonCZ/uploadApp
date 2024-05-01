@@ -1,4 +1,5 @@
 import { useNavigate } from "react-router-dom";
+import Button from "../Button/Button";
 
 function StickySearchMenu() {
 
@@ -33,12 +34,7 @@ function StickySearchMenu() {
             </p>
           </div>
         </div>
-        <button
-          className="button"
-          style={{ height: "2.5rem", color: "#a31bf1" }}
-        >
-          Upload
-        </button>
+        <Button />
       </div>
     </>
   );
