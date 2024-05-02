@@ -1,6 +1,7 @@
 import { Link, useNavigate } from "react-router-dom";
 import { postUpload } from "../../models/uploads";
 import { useState } from "react";
+import Dropdown from "../../components/Dropdown/Dropdown";
 
 export default function Upload() {
   const [formData, setFormData] = useState();
@@ -29,10 +30,22 @@ const submit = async (e) => {
   return (
     <>
         <h1>Upload form</h1>
-        <form encType="multipart/form-data">
-            <input type="text" name="imageName" placeholder="Napište jméno inzerátu" onChange={handleChange}/>
-            <input type="file" name="imageFile" onChange={handleImageChange}/>
-            <input type="submit" value={"Přidat inzerát"} onClick={submit}/>
+        <form encType="multipart/form-data" style={{padding: '0 10%'}}>
+          <Dropdown />
+        <p className="control has-icons-left">
+              <input type="text" className="input" />
+              <span
+                className="material-symbols-outlined icon is-left is-flex is-justify-content-center is-align-items-center"
+                style={{
+                  fontSize: "1.25rem",
+                  height: "40px",
+                  width: "3rem",
+                  color: "#a31bf1",
+                }}
+              >
+                search
+              </span>
+            </p>
         </form>
         <p>{info}</p>
         

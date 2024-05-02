@@ -19,6 +19,9 @@ const uploadsSchema = mongoose.Schema({
     imagePath: {
         type: String, required: false
     },
+    category: {
+        type: String, required: true
+    },
     date: {
         type: Date
     },
